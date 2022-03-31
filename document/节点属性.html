@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Hello, world!</div>
+
+<script>
+  let div = document.querySelector('div');
+
+  // 使用 <p>...</p> 替换 div.outerHTML
+  div.outerHTML = '<p>A new element</p>'; // (*)
+
+  // 蛤！'div' 还是原来那样！
+  alert(div.outerHTML); // <div>Hello, world!</div> (**)
+</script>
+</body>
+</html>
+<!-- 修改outerHTML不改变元素属性 但改变dom -->

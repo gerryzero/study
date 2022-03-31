@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <!-- 标记这个 div 以在这显示 "name" -->
+<div show-info="name"></div>
+<!-- 标记这个 div 以在这显示 "age" -->
+<div show-info="age"></div>
+
+<script>
+  // 这段代码找到带有标记的元素，并显示需要的内容
+  let user = {
+    name: "Pete",
+    age: 25
+  };
+
+  for(let div of document.querySelectorAll('[show-info]')) {
+    // 在字段中插入相应的信息
+    let field = div.getAttribute('show-info');
+    div.innerHTML = user[field]; // 首先 "name" 变为 Pete，然后 "age" 变为 25
+  }
+</script>
+</body>
+</body>
+</html>
