@@ -1,0 +1,13 @@
+<form name="my-form">
+    <div class="article">Article</div>
+    <div class="long artice">Long article</div>
+  </form>
+  
+  <script>
+    // 按 name 特性查找
+    let form = document.getElementsByName('my-form')[0];
+  
+    // 在 form 中按 class 查找
+    let articles = form.getElementsByClassName('article');
+    alert(articles.length); // 2, found two elements with class "article"
+  </script>

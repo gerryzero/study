@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Users:</div>
+    <ul>
+      <li>John</li>
+      <li>Pete</li>
+    </ul>
+    <script>
+        // 获取 <div> DOM 节点：
+        document.body.firstElementChild
+        // 或
+        document.body.children[0]
+        // 或（第一个节点是空格，所以我们应该获取的是第二个）
+        document.body.childNodes[1]
+        
+        // 获取 <ul> DOM 节点：
+            document.body.lastElementChild
+            // 或
+            document.body.children[1]
+
+        // 获取第二个 <li>（即包含 Pete 的节点）：
+            document.body.lastElementChild.lastElementChild
+    </script>
+</body>
+</html>
