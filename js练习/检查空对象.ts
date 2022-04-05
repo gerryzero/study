@@ -3,7 +3,6 @@ function isEmpty(obj){
        return false;
     }
     return true;
-
 }
 let schedule={};
 isEmpty(schedule);
